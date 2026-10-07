@@ -41,7 +41,7 @@ Slave clock jumpers on the NUCLEO: **PB13 → PC10** and **PB12 → PA4** (throu
 ## Building the firmware
 
 1. Open `acoustic_camera.ioc` in **STM32CubeMX** and click *Generate Code* (toolchain: MDK-ARM).
-2. Copy `main.c` into `Core/Src/`, replacing the generated one.
+2. Copy `main_sound_gated.c` into `Core/Src/` as `main.c`, replacing the generated one.
 3. Open `acoustic_camera.uvprojx` in **Keil µVision**.
 4. Enable **CMSIS → DSP** in *Project → Manage → Run-Time Environment*.
 5. In *Options for Target*: Arm Compiler 6, optimisation `-O2`, *Use MicroLIB*, *Single Precision FPU*.
